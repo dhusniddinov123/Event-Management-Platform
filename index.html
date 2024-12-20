@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Event Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Event Management Platform</h1>
+  </header>
+  
+  <main>
+    <!-- Event Registration -->
+    <section id="register">
+      <h2>Register for an Event</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required style="width: 50vw;">
+        <label for="event">Select Event:</label>
+        <select id="event" required style="width: 50vw;">
+          <option value="Tech Talk">Tech Talk</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Hackathon">Hackathon</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+      <div id="confirmation"></div>
+    </section>
+    
+    <!-- Schedule Management -->
+    <section id="schedule">
+      <h2>Event Schedule</h2>
+      <ul id="eventSchedule">
+        <li>Tech Talk - Dec 22, 10:00 AM</li>
+        <li>Workshop - Dec 23, 2:00 PM</li>
+        <li>Hackathon - Dec 24, 9:00 AM</li>
+      </ul>
+    </section>
+    
+    <!-- Participant Tracking -->
+    <section id="participants">
+      <h2>Registered Participants</h2>
+      <ul id="participantList"></ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Student Event Management</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
